@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="MST16" constructor="EmailTextFieldControl" version="0.0.1" display-name-key="EmailTextFieldControl_Display_Key" description-key="EmailTextFieldControlDesc_Key" control-type="standard">
+    <type-group name="text">
+      <type>SingleLine.Email</type>
+      <type>SingleLine.Text</type>
+    </type-group>
+
+    <property name="textValue" display-name-key="TextValue_Display_Key" description-key="TextValue_Desc_Key" of-type-group="text" usage="bound" required="true" />
+
+    <property name="webResource" display-name-key="WebResource_Display_Key" description-key="WebResource_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="functionName" display-name-key="FunctionName_Display_Key" description-key="FunctionName_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/EmailTextField.css" order="1" />
+      <resx path="strings/EmailTextFieldControl.1033.resx" version="1.0.0" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+    </feature-usage>
+  </control>
+</manifest>
