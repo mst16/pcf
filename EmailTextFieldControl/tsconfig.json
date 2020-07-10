@@ -1,0 +1,17 @@
+{
+    "extends": "./node_modules/pcf-scripts/tsconfig_base.json",
+    "compilerOptions": {
+        "jsx": "react",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "target": "es5",
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true
+    },
+}
